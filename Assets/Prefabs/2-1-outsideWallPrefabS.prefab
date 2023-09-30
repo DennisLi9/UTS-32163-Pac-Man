@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &192407539221088671
+--- !u!1 &1920772867554879537
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7290583764772021702}
-  - component: {fileID: 5624952928929013005}
+  - component: {fileID: 827527801299349548}
+  - component: {fileID: 4292543257840917178}
   m_Layer: 0
-  m_Name: outsideCornerPrefab
+  m_Name: 2-1-outsideWallPrefabS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7290583764772021702
+--- !u!4 &827527801299349548
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192407539221088671}
+  m_GameObject: {fileID: 1920772867554879537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.957, y: 1.802, z: 0}
+  m_LocalPosition: {x: -1.9712932, y: 1.6996248, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5624952928929013005
+--- !u!212 &4292543257840917178
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192407539221088671}
+  m_GameObject: {fileID: 1920772867554879537}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1523268251, guid: 11eca152cb3ff56459a8f540db7e4cb9, type: 3}
+  m_Sprite: {fileID: -275272765, guid: 11eca152cb3ff56459a8f540db7e4cb9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
