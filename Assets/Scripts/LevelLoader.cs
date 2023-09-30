@@ -43,6 +43,10 @@ public class LevelLoader : MonoBehaviour
         {
             for (int j = 0; j < levelMap.GetLength(1); j++)
             {
+                // Adjust these values to fit the size of your sprites
+                float xScaleFactor = 0.15f; 
+                float yScaleFactor = 0.15f;
+                
                 GameObject prefabToInstantiate = emptyPrefab; // Default to empty
                 switch (levelMap[i, j])
                 {
@@ -71,10 +75,11 @@ public class LevelLoader : MonoBehaviour
                         prefabToInstantiate = tJunctionPrefab;
                         break;
                 }
+                
 
                 // Instantiate the selected prefab at the appropriate grid position
                 // Adjust the position calculation as needed for your game's scale
-                Vector3 position = new Vector3(j, -i, 0);
+                Vector3 position = new Vector3(j * xScaleFactor, -i * yScaleFactor, 0); 
                 Instantiate(prefabToInstantiate, position, Quaternion.identity, transform);
             }
         }
