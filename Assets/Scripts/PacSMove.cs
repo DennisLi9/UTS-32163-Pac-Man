@@ -81,7 +81,7 @@ public class PacSMove : MonoBehaviour
                 yield return null; // Wait for the next frame
             }
 
-            audioSource.Play();  // Play the sound effect
+            // audioSource.Play();  // Play the sound effect
             
             // Move to the next waypoint in a loop
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
