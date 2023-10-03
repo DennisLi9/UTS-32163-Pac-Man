@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class LevelLoader : MonoBehaviour
 {
-    public GameObject outsideCornerPrefab;
-    public GameObject outsideWallPrefab;
-    public GameObject insideCornerPrefab;
-    public GameObject insideWallPrefab;
+	public GameObject emptyPrefab;
+    public GameObject outsideCornerPrefabR;
+	public GameObject outsideCornerPrefabU;
+	public GameObject outsideCornerPrefabL;
+	public GameObject outsideCornerPrefabD;
+    public GameObject outsideWallPrefabH;
+	public GameObject outsideWallPrefabS;
+    public GameObject insideCornerPrefabR;
+	public GameObject insideCornerPrefabU;
+	public GameObject insideCornerPrefabL;
+	public GameObject insideCornerPrefabD;
+    public GameObject insideWallPrefabS;
+	public GameObject insideWallPrefabH;
     public GameObject standardPelletPrefab;
     public GameObject powerPelletPrefab;
     public GameObject tJunctionPrefab;
-    public GameObject emptyPrefab;
     int[,] levelMap =
     {
         {1,2,2,2,2,2,2,2,2,2,2,2,2,7},

@@ -3,7 +3,15 @@ guid: 8e038884ed5cec34890bdd6bfd4ff991
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - outsideCornerPrefab: {instanceID: 0}
+  - outsideWallPrefab: {instanceID: 0}
+  - insideCornerPrefab: {instanceID: 0}
+  - insideWallPrefab: {instanceID: 0}
+  - standardPelletPrefab: {instanceID: 0}
+  - powerPelletPrefab: {instanceID: 0}
+  - tJunctionPrefab: {fileID: 1677970334679949789, guid: 7051c48f750f5d8459426a9481758ef3, type: 3}
+  - emptyPrefab: {fileID: 2158369564528846740, guid: 7e51dcad9988ea343af73274f2cf4245, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
