@@ -12,7 +12,7 @@ public class PacSMove : MonoBehaviour
     // private float soundTimer;  // Timer to control the sound interval
     private float distanceTraveled = 0f; // To keep track of the distance traveled
     private const float SOUND_PLAY_DISTANCE = 0.15f; // Play sound every 0.15 units distance
-    private Vector3 lastPosition; // To store the last position
+    private Vector3 lastPosition; 
 
     // These are your specific coordinates
     private Vector3[] waypoints = 
