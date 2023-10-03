@@ -22,21 +22,21 @@ public class LevelLoader : MonoBehaviour
     public GameObject tJunctionPrefab;
     int[,] levelMap =
     {
-        {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
-        {2,5,5,5,5,5,5,5,5,5,5,5,5,4},
-        {2,5,3,4,4,3,5,3,4,4,4,3,5,4},
-        {2,6,4,0,0,4,5,4,0,0,0,4,5,4},
-        {2,5,3,4,4,3,5,3,4,4,4,3,5,3},
-        {2,5,5,5,5,5,5,5,5,5,5,5,5,5},
-        {2,5,3,4,4,3,5,3,3,5,3,4,4,4},
-        {2,5,3,4,4,3,5,4,4,5,3,4,4,3},
-        {2,5,5,5,5,5,5,4,4,5,5,5,5,4},
-        {1,2,2,2,2,1,5,4,3,4,4,3,0,4},
-        {0,0,0,0,0,2,5,4,3,4,4,3,0,3},
-        {0,0,0,0,0,2,5,4,4,0,0,0,0,0},
-        {0,0,0,0,0,2,5,4,4,0,3,4,4,0},
-        {2,2,2,2,2,1,5,3,3,0,4,0,0,0},
-        {0,0,0,0,0,0,5,0,0,0,4,0,0,0},
+        {1,5,5,5,5,5,5,5,5,5,5,5,5,15},
+        {6,13,13,13,13,13,13,13,13,13,13,13,13,11},
+        {6,13,7,12,12,10,13,7,12,12,12,10,13,11},
+        {6,14,11,0,0,11,13,11,0,0,0,11,13,11},
+        {6,13,8,12,12,9,13,8,12,12,12,9,13,8},
+        {6,13,13,13,13,13,13,13,13,13,13,13,13,13},
+        {6,13,7,12,12,10,13,7,10,13,7,12,12,12},
+        {6,13,8,12,12,9,13,11,11,13,8,12,12,10},
+        {6,13,13,13,13,13,13,11,11,13,13,13,13,11},
+        {2,5,5,5,5,4,13,11,8,12,12,10,0,11},
+        {0,0,0,0,0,6,13,11,7,12,12,9,0,8},
+        {0,0,0,0,0,6,13,11,11,0,0,0,0,0},
+        {0,0,0,0,0,3,13,11,11,0,7,12,12,0},
+        {5,5,5,5,5,3,13,8,9,0,11,0,0,0},
+        {0,0,0,0,0,0,13,0,0,0,11,0,0,0},
     };
     
     // Start is called before the first frame update
@@ -62,29 +62,52 @@ public class LevelLoader : MonoBehaviour
                         // Leave as empty or you could instantiate a floor tile or something else if needed
                         break;
                     case 1:
-                        prefabToInstantiate = outsideCornerPrefab;
+                        prefabToInstantiate = outsideCornerPrefabR;
                         break;
                     case 2:
-                        prefabToInstantiate = outsideWallPrefab;
+                        prefabToInstantiate = outsideCornerPrefabU;
                         break;
                     case 3:
-                        prefabToInstantiate = insideCornerPrefab;
+                        prefabToInstantiate = outsideCornerPrefabL;
                         break;
                     case 4:
-                        prefabToInstantiate = insideWallPrefab;
+                        prefabToInstantiate = outsideCornerPrefabD;
                         break;
                     case 5:
-                        prefabToInstantiate = standardPelletPrefab;
+                        prefabToInstantiate = outsideWallPrefabH;
                         break;
                     case 6:
-                        prefabToInstantiate = powerPelletPrefab;
+                        prefabToInstantiate = outsideWallPrefabS;
                         break;
                     case 7:
-                        prefabToInstantiate = tJunctionPrefab;
+                        prefabToInstantiate = insideCornerPrefabR;
+                        break;
+					case 8:
+						prefabToInstantiate = insideCornerPrefabU;
+                        break;
+					case 9:
+						prefabToInstantiate = insideCornerPrefabL;
+                        break;
+					case 10:
+                        prefabToInstantiate = insideCornerPrefabD;
+                        break;
+                    case 11:
+                        prefabToInstantiate = insideWallPrefabS;
+                        break;
+					case 12:
+						prefabToInstantiate = insideWallPrefabH;
+                        break;
+					case 13:
+						prefabToInstantiate = standardPelletPrefab;
+                        break;
+					case 14:
+						prefabToInstantiate = powerPelletPrefab;
+                        break;
+					case 15:
+						prefabToInstantiate = tJunctionPrefab;
                         break;
                 }
                 
-
                 // Instantiate the selected prefab at the appropriate grid position
                 // Adjust the position calculation as needed for your game's scale
                 Vector3 position = new Vector3(j * xScaleFactor, -i * yScaleFactor, 0); 
