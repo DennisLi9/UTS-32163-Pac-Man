@@ -1,25 +1,9 @@
 fileFormatVersion: 2
-guid: 8e038884ed5cec34890bdd6bfd4ff991
+guid: ee503dea2cc408d419dea9394bf5ffda
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - emptyPrefab: {fileID: 2158369564528846740, guid: 7e51dcad9988ea343af73274f2cf4245, type: 3}
-  - outsideCornerPrefabR: {fileID: 192407539221088671, guid: be157adb656d0a341a18c8a346f8ad54, type: 3}
-  - outsideCornerPrefabU: {fileID: 3661356881267529398, guid: b1181d86cd8f05141aa2d40e1820c706, type: 3}
-  - outsideCornerPrefabL: {fileID: 6284810277481480673, guid: cc9259098c67f0347bb365aeeb0f0214, type: 3}
-  - outsideCornerPrefabD: {fileID: 7596924573770673360, guid: 688cef75c8c6b234e9c83934a099fe0b, type: 3}
-  - outsideWallPrefabH: {fileID: 2748782905705919008, guid: 403956a5e09f11e498fc97442f1b3a01, type: 3}
-  - outsideWallPrefabS: {fileID: 1920772867554879537, guid: e90ce3bbb03f39445b5a6c9ddd0510d4, type: 3}
-  - insideCornerPrefabR: {fileID: 3412891769614522761, guid: b642393e30a88a64b8a1b41a87e0b6ef, type: 3}
-  - insideCornerPrefabU: {fileID: 2858966356442585584, guid: 1e582881323d44e4e89cb2697fa33877, type: 3}
-  - insideCornerPrefabL: {fileID: 8017657884300343927, guid: 8df34490b2b52e540bebcd242024b7a4, type: 3}
-  - insideCornerPrefabD: {fileID: 4568301776160105567, guid: e5612b3aea803f44ab7bb70cb05a766b, type: 3}
-  - insideWallPrefabS: {fileID: 1817071131300902798, guid: cb78f5c922187cb45951c627a25dc16d, type: 3}
-  - insideWallPrefabH: {fileID: 6980777905909952933, guid: e02632d7a9cb9c046899a341b10ac71e, type: 3}
-  - standardPelletPrefab: {fileID: 8637955448270884544, guid: d8ca35dd9d0939b4cb0d81f09249c677, type: 3}
-  - powerPelletPrefab: {fileID: 6336872818630291331, guid: 2f7495ee4dac68c44bc662957e5ab576, type: 3}
-  - tJunctionPrefab: {fileID: 1677970334679949789, guid: 7051c48f750f5d8459426a9481758ef3, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
