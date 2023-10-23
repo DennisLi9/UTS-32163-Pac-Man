@@ -5,7 +5,7 @@ using UnityEngine;
 public class PacStudentController : MonoBehaviour
 {
     public float speed = 1f; // Adjust this value to control the speed of PacStudent
-    public LevelLoader levelGenerator;
+    public LayerMask wallLayer; // Assign the layer of the walls in the Inspector
     private Vector3 targetPosition;
     private bool isMoving;
     private Vector3 lastInput;
@@ -34,8 +34,28 @@ public class PacStudentController : MonoBehaviour
 
         if (input != Vector3.zero)
             lastInput = input;
+        
+        if (IsWalkable(transform.position + lastInput))
+        {
+            currentInput = lastInput;
+            targetPosition = transform.position + currentInput;
+            isMoving = true;
+        }
+        else if (IsWalkable(transform.position + currentInput))
+        {
+            targetPosition = transform.position + currentInput;
+            isMoving = true;
+        }
     }
+    bool IsWalkable(Vector3 direction)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1, wallLayer);
 
+        // If it hits something on the wallLayer, then the direction is not walkable
+        if (hit.collider != null)
+            return false;
+        return true;
+    }
     // Update is called once per frame
     void Update()
     {
